@@ -1,0 +1,10 @@
+{
+  "user": {
+    "id": 1,
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "j.doe@focal.com",
+    "department": "IT",
+    "availability": "Working remotely"
+  }
+}
