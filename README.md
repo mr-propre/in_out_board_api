@@ -1,5 +1,7 @@
 # in_out_board_api
-Restful API for the in out board project.
+/!\ DISCLAIMER /!\ This API WILL be subject to changes once the API client development has started.
+
+RESTful/CRUD API prototype for the in out board project using FastAPI Python framework.
 
 ## Requirements
 - Python3.6+
