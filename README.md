@@ -2,9 +2,9 @@
 Restful API for the in out board project.
 
 ## Requirements
-Python3.6+
-Python venv
-MongoDB
+- Python3.6+
+- Python venv
+- MongoDB
 
 ## Set-Up
 - Activate the Python venv (. bin/activate.*).
@@ -13,6 +13,4 @@ MongoDB
 - Run the Uvicorn server with `python main.py`.
 
 ## Usage
-By default, the server is running on the 8000 port.
-You can access the Swagger powered API doc at http://localhost:8000/docs.
-On this page you can also test the API endpoints, as with Postman
+By default, the server is running on the 8000 port. You can access the Swagger powered API doc at http://localhost:8000/docs. On this page you can also test the API endpoints, as with Postman.
