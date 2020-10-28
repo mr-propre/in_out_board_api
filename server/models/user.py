@@ -1,6 +1,5 @@
-from typing import Optional
+from typing import Optional, List
 from pydantic import BaseModel, EmailStr, Field
-
 
 class UserSchema(BaseModel):
     firstName: str = Field(...)
@@ -40,17 +39,17 @@ class UpdateUserModel(BaseModel):
         }
 
 
-def ResponseModel(data, code, message):
-    return {
-        "data": [data],
-        "code": code,
-        "message": message
-    }
+class UserResponseModel(BaseModel):
+    responseMessage: str
+    user: Optional[dict]
+    # id: Optional[str]
+    # firstName: Optional[str]
+    # lastName: Optional[str]
+    # email: Optional[EmailStr]
+    # department: Optional[str]
+    # status: Optional[str]
 
 
-def ErrorResponseModel(error, code, message):
-    return {
-        "error": error,
-        "code": code,
-        "message": message
-    }
+class UsersResponseModel(BaseModel):
+    responseMessage: str
+    users: Optional[List[dict]]
