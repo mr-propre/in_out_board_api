@@ -40,13 +40,17 @@ class UpdateUserModel(BaseModel):
         }
 
 
-def ResponseModel(data, message):
+def ResponseModel(data, code, message):
     return {
         "data": [data],
-        "code": 200,
-        "message": message,
+        "code": code,
+        "message": message
     }
 
 
 def ErrorResponseModel(error, code, message):
-    return {"error": error, "code": code, "message": message}
+    return {
+        "error": error,
+        "code": code,
+        "message": message
+    }
