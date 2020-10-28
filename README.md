@@ -3,6 +3,7 @@ Restful API for the in out board project.
 
 ## Requirements
 - Python3.6+
+- Python pip
 - Python venv
 - MongoDB
 
