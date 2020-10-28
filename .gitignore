@@ -125,3 +125,4 @@ dmypy.json
 .pyre/
 bin/
 lib64
+.vscode/
